@@ -2,7 +2,7 @@
 
 int main()
 {
-    printf("Hello world\n");
+    printf("reyna\n");
     system("pause");
     return 0;
 }
