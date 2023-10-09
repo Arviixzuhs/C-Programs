@@ -17,48 +17,6 @@ void deleteUser(struct User users[], int *count);
 void editUser(struct User users[], int *count);
 void newUser(struct User users[], int *count);
 
-int main()
-{
-    int option;
-    int usersCount = 0;
-    struct User users[MAX_USERS];
-
-    do
-    {
-        mainMenu();
-        printf("Selecciona una opcion: ");
-        scanf("%i", &option);
-        system("cls");
-
-        switch (option)
-        {
-        case 1:
-            newUser(users, &usersCount);
-            break;
-        case 2:
-            deleteUser(users, &usersCount);
-            break;
-        case 3:
-            searchUser(users, &usersCount);
-            break;
-        case 4:
-            editUser(users, &usersCount);
-            break;
-        case 5:
-            userTable(users, &usersCount);
-            break;
-        case 6:
-            printf("6) Salir\n");
-            break;
-        default:
-            printf("Opcion no valida\n");
-            break;
-        }
-    } while (option != 6);
-
-    return 0;
-}
-
 void mainMenu()
 {
     printf("Sistema de usuarios\n\n");
@@ -254,4 +212,46 @@ void editUser(struct User users[], int *count)
     printf("Usuario editado correctamente.\n");
     sleep(1);      // Esperamos 1 segundos.
     system("cls"); // Limpiamos la consola.
+}
+
+int main()
+{
+    int option;
+    int usersCount = 0;
+    struct User users[MAX_USERS];
+
+    do
+    {
+        mainMenu();
+        printf("Selecciona una opcion: ");
+        scanf("%i", &option);
+        system("cls");
+
+        switch (option)
+        {
+        case 1:
+            newUser(users, &usersCount);
+            break;
+        case 2:
+            deleteUser(users, &usersCount);
+            break;
+        case 3:
+            searchUser(users, &usersCount);
+            break;
+        case 4:
+            editUser(users, &usersCount);
+            break;
+        case 5:
+            userTable(users, &usersCount);
+            break;
+        case 6:
+            printf("6) Salir\n");
+            break;
+        default:
+            printf("Opcion no valida\n");
+            break;
+        }
+    } while (option != 6);
+
+    return 0;
 }
