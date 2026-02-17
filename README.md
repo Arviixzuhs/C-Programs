@@ -1,7 +1,9 @@
-# 📚 C-Programs
-
 <div align="center">
 
+<h1>
+  📚 C-Programs
+</h1>
+ 
 [![GitHub stars](https://img.shields.io/github/stars/Arviixzuhs/C-Programs?style=for-the-badge)](https://github.com/Arviixzuhs/C-Programs/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Arviixzuhs/C-Programs?style=for-the-badge)](https://github.com/Arviixzuhs/C-Programs/network)
 [![GitHub issues](https://img.shields.io/github/issues/Arviixzuhs/C-Programs?style=for-the-badge)](https://github.com/Arviixzuhs/C-Programs/issues)
